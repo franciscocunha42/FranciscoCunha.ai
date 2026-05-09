@@ -23,16 +23,16 @@ export default function Hero() {
           <span>Remote</span>
         </div>
         <div className={styles.ctaRow}>
-          <a
-            className="cta cta--primary"
-            href="mailto:francisco@franciscocunha.ai?subject=Diagnostic%20enquiry"
-          >
+          <a className="cta cta--primary" href="#contact">
             Book the free diagnostic <span aria-hidden>→</span>
           </a>
-          <span className={styles.ctaNote}>
-            Stages I &amp; II are <em>free</em> and commit you to nothing.
-          </span>
+          <span className={styles.chip}>Free · non-binding</span>
         </div>
+        <p className={styles.ctaNote}>
+          Stages <em>I</em> &amp; <em>II</em> — <em>Diagnostics</em> and{" "}
+          <em>Proposal</em> — are free and commit you to nothing. The work
+          begins at Stage <em>III</em>, on a written, fixed-scope agreement.
+        </p>
       </div>
     </section>
   );

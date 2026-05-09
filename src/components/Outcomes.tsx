@@ -3,18 +3,6 @@ import styles from "./Outcomes.module.css";
 const outcomes = [
   {
     n: "№ 01",
-    label: "Return",
-    title: "ROI you can defend.",
-    body: (
-      <>
-        Every engagement is scoped considering payback to the customer — agreed
-        in writing before we start. Past engagements:{" "}
-        <em>500k€–5M€ annualised</em>, depending on scope.
-      </>
-    ),
-  },
-  {
-    n: "№ 02",
     label: "Time",
     title: "Less admin work.",
     body: (
@@ -26,21 +14,38 @@ const outcomes = [
     ),
   },
   {
-    n: "№ 03",
+    n: "№ 02",
     label: "Quality",
     title: "Fewer errors, better consistency.",
     body: (
       <>
-        AI-assisted checks catch what tired humans miss. Decisions become more
-        uniform across the team.
+        Software-assisted checks catch what tired humans miss. Decisions become
+        more uniform across the team, even on the busy days.
+      </>
+    ),
+  },
+  {
+    n: "№ 03",
+    label: "Predictability",
+    title: "Clear and predictable systems.",
+    body: (
+      <>
+        Defined handoffs, runbooks for the edge cases, monitoring on the parts
+        that matter. Less firefighting, fewer surprises.
       </>
     ),
   },
   {
     n: "№ 04",
-    label: "Calm",
-    title: "Less stress on your people.",
-    body: <>Predictable systems, clear handoffs, less firefighting.</>,
+    label: "Return",
+    title: "Practical ROI · measurable improvement.",
+    body: (
+      <>
+        Each engagement is scoped against a written payback target — agreed
+        before we start, measured after we ship. Past engagements:{" "}
+        <em>500k€–5M€ annualised</em>, depending on scope.
+      </>
+    ),
   },
 ];
 

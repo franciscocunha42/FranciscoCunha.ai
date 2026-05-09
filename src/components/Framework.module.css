@@ -3,11 +3,57 @@
   max-width: 18ch;
 }
 
+.banner {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 28px;
+  background: var(--cream);
+  border: 1px solid var(--terracotta);
+}
+
+@media (min-width: 768px) {
+  .banner {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 28px;
+  }
+}
+
+.bannerLabel {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--terracotta);
+  white-space: nowrap;
+}
+
+.bannerBody {
+  font-family: var(--font-serif), serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
 .list {
   list-style: none;
-  margin: 64px 0 0;
+  margin: 48px 0 0;
   padding: 0;
   border-top: 1px solid var(--rule);
+}
+
+.pullQuote {
+  margin-top: 6px;
+  padding: 16px 20px;
+  border-left: 2px solid var(--terracotta);
+  background: rgba(181, 86, 46, 0.06);
+  font-family: var(--font-serif), serif;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
 }
 
 .row {

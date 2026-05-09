@@ -6,9 +6,12 @@ export default function Differentiator() {
       <div className={`container ${styles.inner}`}>
         <p className="eyebrow">Why me — not a traditional consultancy</p>
         <p className={styles.line}>
-          <em>Solo practice.</em> Fixed scope before kickoff.
-          <br />
-          Working software, <em>not 80-page decks.</em>
+          <em>Custom-built</em> for your specific problem<br />
+          and the people who&rsquo;ll actually use it.
+        </p>
+        <p className={styles.sub}>
+          Solo practice. Fixed scope before kickoff. <em>Working software</em>,
+          not 80-page decks.
         </p>
       </div>
     </section>

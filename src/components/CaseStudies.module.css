@@ -6,10 +6,10 @@
 .grid {
   margin-top: 64px;
   display: grid;
-  gap: 48px;
+  gap: 56px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
     gap: 64px;
@@ -30,11 +30,32 @@
   font-weight: 500;
 }
 
-.body {
-  margin-top: 22px;
+.dl {
+  margin: 24px 0 0;
+  display: grid;
+  gap: 18px 0;
+}
+
+.dl dt {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.dl dd {
+  margin: 0 0 0;
   font-family: var(--font-serif), serif;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.08rem;
+  line-height: 1.55;
   color: var(--ink);
-  max-width: 38ch;
+  max-width: 44ch;
+}
+
+.resultLine {
+  font-size: 1.2rem !important;
+  line-height: 1.4 !important;
 }

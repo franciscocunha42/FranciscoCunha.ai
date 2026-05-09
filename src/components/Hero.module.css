@@ -41,12 +41,29 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--terracotta);
+  color: var(--terracotta);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 999px;
 }
 
 .ctaNote {
+  margin-top: 20px;
   font-family: var(--font-serif), serif;
   font-size: 1rem;
+  line-height: 1.5;
   color: var(--ink-soft);
-  max-width: 32ch;
+  max-width: 52ch;
 }

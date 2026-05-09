@@ -12,6 +12,14 @@ const stages = [
         and what&rsquo;s worth building next.
       </>
     ),
+    pullQuote: (
+      <>
+        <em>Gartner expects 30%+</em> of generative-AI projects to be abandoned
+        by end of 2025 — usually because of poor data quality, weak risk
+        controls, or unclear business value. The diagnostic is how we avoid
+        that trap before any code is written.
+      </>
+    ),
     meta: ["Free", "~1–2 days"],
   },
   {
@@ -79,6 +87,14 @@ export default function Framework() {
           Five stages,<br />
           <em>one engagement.</em>
         </h2>
+        <div className={styles.banner}>
+          <span className={styles.bannerLabel}>Free · non-binding</span>
+          <span className={styles.bannerBody}>
+            Stages <em>I</em> &amp; <em>II</em> — <em>Diagnostics</em> and{" "}
+            <em>Proposal</em> — are free and commit you to nothing. The work
+            begins at Stage <em>III</em>, on a written, fixed-scope agreement.
+          </span>
+        </div>
         <ol className={styles.list}>
           {stages.map((s) => (
             <li key={s.numeral} className={styles.row}>
@@ -91,6 +107,9 @@ export default function Framework() {
                   {s.suffix && <span className={styles.suffix}> {s.suffix}</span>}
                 </h3>
                 <p className={styles.desc}>{s.body}</p>
+                {s.pullQuote && (
+                  <aside className={styles.pullQuote}>{s.pullQuote}</aside>
+                )}
               </div>
               <div className={styles.meta}>
                 {s.meta.map((m, i) => (
@@ -102,10 +121,6 @@ export default function Framework() {
             </li>
           ))}
         </ol>
-        <p className={styles.footnote}>
-          Stages <em>I</em> &amp; <em>II</em> commit you to nothing. The work
-          begins at Stage <em>III</em>, on a written, fixed-scope agreement.
-        </p>
       </div>
     </section>
   );

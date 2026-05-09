@@ -1,8 +1,10 @@
+import ContactForm from "./ContactForm";
 import styles from "./CTA.module.css";
 
 export default function CTA() {
   return (
     <section
+      id="contact"
       className={`section panel-navy ${styles.section}`}
       aria-labelledby="cta-title"
     >
@@ -13,14 +15,16 @@ export default function CTA() {
         </h2>
         <p className={styles.sub}>
           A day on site, a written read on what&rsquo;s worth building —
-          and what isn&rsquo;t.
+          and what isn&rsquo;t. <em>Stages I &amp; II are free and commit you
+          to nothing.</em>
         </p>
-        <a
-          className={`cta cta--on-navy ${styles.cta}`}
-          href="mailto:francisco@franciscocunha.ai?subject=Diagnostic%20enquiry"
-        >
-          francisco@franciscocunha.ai <span aria-hidden>→</span>
-        </a>
+        <ContactForm />
+        <p className={styles.fallback}>
+          Prefer email?{" "}
+          <a href="mailto:francisco@franciscocunha.ai?subject=Diagnostic%20enquiry">
+            francisco@franciscocunha.ai
+          </a>
+        </p>
         <hr className="rule rule--on-navy" />
         <dl className={styles.contact}>
           <div>
@@ -52,12 +56,6 @@ export default function CTA() {
           <div>
             <dt>Languages</dt>
             <dd>English · Português · Spanish</dd>
-          </div>
-          <div>
-            <dt>Engagement</dt>
-            <dd>
-              Stages <em>I</em> &amp; <em>II</em> are free, no commitment.
-            </dd>
           </div>
         </dl>
       </div>

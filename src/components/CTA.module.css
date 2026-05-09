@@ -13,13 +13,16 @@
   color: rgba(244, 238, 226, 0.86);
 }
 
-.cta {
-  margin-top: 40px;
+.fallback {
+  margin-top: 28px;
+  font-family: var(--font-serif), serif;
   font-size: 1rem;
+  color: rgba(244, 238, 226, 0.78);
 }
 
-.cta a {
-  border-bottom: none;
+.fallback a {
+  color: var(--cream);
+  border-bottom-color: rgba(244, 238, 226, 0.4);
 }
 
 .contact {

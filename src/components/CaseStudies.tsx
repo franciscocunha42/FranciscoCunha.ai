@@ -1,25 +1,68 @@
 import styles from "./CaseStudies.module.css";
 
-const cases = [
+type Case = {
+  eyebrow: string;
+  context: React.ReactNode;
+  did: React.ReactNode;
+  team: React.ReactNode;
+  result: React.ReactNode;
+};
+
+const cases: Case[] = [
   {
     eyebrow: "EU hub setup · Luxury Fashion",
-    body: (
+    context: (
       <>
-        Scoped <em>WMS</em> requirements for the main European logistics hub of
-        a luxury fashion market leader.{" "}
-        <span className="result">
-          5M€+ in savings, 1M€+ revenue uplift, on-time go-live.
-        </span>
+        Market-leading luxury fashion brand standing up its main European
+        logistics hub from scratch. Multi-channel: wholesale, retail, and
+        e-commerce, all running through one site.
       </>
+    ),
+    did: (
+      <>
+        Scoped <em>WMS</em> requirements end-to-end, ran the vendor selection,
+        led integration design with ERP and carrier systems, and shaped the
+        operational blueprint for inbound, putaway, picking, and outbound.
+      </>
+    ),
+    team: (
+      <>
+        Walked the floor daily with the operations team. Translated their real
+        workflows into requirements the vendor could build against. Trained
+        team leads through UAT so they owned the system before go-live.
+      </>
+    ),
+    result: (
+      <span className="result">
+        5M€+ in savings, 1M€+ revenue uplift, on-time go-live.
+      </span>
     ),
   },
   {
     eyebrow: "EU hub setup · Global Sportswear Brand",
-    body: (
+    context: (
       <>
-        Led end-to-end <em>UAT</em> and go-live of a wholesale + e-commerce hub.{" "}
-        <span className="result">5M+ stock units live on schedule.</span>
+        Global sportswear brand launching a combined wholesale + e-commerce
+        hub in Europe. Hard go-live deadline tied to the seasonal calendar,
+        no room to slip.
       </>
+    ),
+    did: (
+      <>
+        Owned end-to-end <em>UAT</em> across <em>WMS</em>, <em>ERP</em>, and
+        carrier integrations. Wrote the test plan, ran the cycles, triaged
+        defects with vendors, and signed off readiness for cutover.
+      </>
+    ),
+    team: (
+      <>
+        Embedded with the warehouse and IT teams through cutover weekend.
+        Built the runbooks the team still uses, and stayed on hand through
+        hyper-care so issues got resolved without escalation drama.
+      </>
+    ),
+    result: (
+      <span className="result">5M+ stock units live on schedule.</span>
     ),
   },
 ];
@@ -37,7 +80,16 @@ export default function CaseStudies() {
           {cases.map((c) => (
             <article key={c.eyebrow} className={styles.card}>
               <p className={styles.label}>{c.eyebrow}</p>
-              <p className={styles.body}>{c.body}</p>
+              <dl className={styles.dl}>
+                <dt>Context</dt>
+                <dd>{c.context}</dd>
+                <dt>What I did</dt>
+                <dd>{c.did}</dd>
+                <dt>Working with the team</dt>
+                <dd>{c.team}</dd>
+                <dt>Result</dt>
+                <dd className={styles.resultLine}>{c.result}</dd>
+              </dl>
             </article>
           ))}
         </div>
