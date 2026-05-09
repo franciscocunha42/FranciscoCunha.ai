@@ -1,0 +1,54 @@
+.heading {
+  margin-top: 20px;
+  max-width: 22ch;
+}
+
+.grid {
+  margin-top: 64px;
+  display: grid;
+  gap: 56px 64px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  border-top: 1px solid var(--rule);
+  padding-top: 28px;
+}
+
+.cardHead {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.n {
+  color: var(--terracotta);
+  font-weight: 500;
+}
+
+.dash {
+  color: var(--rule);
+}
+
+.title {
+  margin-top: 18px;
+  font-style: italic;
+  max-width: 18ch;
+}
+
+.body {
+  margin-top: 20px;
+  max-width: 36ch;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}

@@ -1,0 +1,19 @@
+.footer {
+  padding-bottom: 32px;
+}
+
+.row {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.right {
+  color: var(--terracotta);
+}

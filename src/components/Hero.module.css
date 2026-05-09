@@ -1,0 +1,52 @@
+.hero {
+  padding-top: 56px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 96px;
+  }
+}
+
+.title {
+  margin-top: 24px;
+  max-width: 14ch;
+}
+
+.lede {
+  margin-top: 36px;
+  max-width: 38ch;
+  font-family: var(--font-serif), serif;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.meta {
+  margin-top: 40px;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.sep {
+  margin: 0 0.6em;
+  color: var(--terracotta);
+}
+
+.ctaRow {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.ctaNote {
+  font-family: var(--font-serif), serif;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 32ch;
+}

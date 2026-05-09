@@ -1,0 +1,62 @@
+.heading {
+  margin-top: 20px;
+  max-width: 16ch;
+  color: var(--cream);
+}
+
+.sub {
+  margin-top: 28px;
+  font-family: var(--font-serif), serif;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.45;
+  max-width: 38ch;
+  color: rgba(244, 238, 226, 0.86);
+}
+
+.cta {
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+.cta a {
+  border-bottom: none;
+}
+
+.contact {
+  margin: 56px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 28px 48px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact dt {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(244, 238, 226, 0.6);
+  font-weight: 500;
+}
+
+.contact dd {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 1.1rem;
+  color: var(--cream);
+}
+
+.contact a {
+  border-bottom-color: rgba(244, 238, 226, 0.3);
+}
