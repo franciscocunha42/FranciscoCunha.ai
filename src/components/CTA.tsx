@@ -27,11 +27,11 @@ export default function CTA() {
             <dt>LinkedIn</dt>
             <dd>
               <a
-                href="https://www.linkedin.com/in/franciscocunha"
+                href="https://www.linkedin.com/in/fmccunha"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                /in/franciscocunha
+                /in/fmccunha
               </a>
             </dd>
           </div>
