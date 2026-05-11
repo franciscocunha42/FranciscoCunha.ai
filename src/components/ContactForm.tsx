@@ -40,12 +40,8 @@ export default function ContactForm() {
           <em>Thanks — I&rsquo;ll be in touch.</em>
         </p>
         <p className={styles.successBody}>
-          You&rsquo;ll get a reply within one business day. If it&rsquo;s
-          urgent, email{" "}
-          <a href="mailto:francisco.m.camposcunha@gmail.com">
-            francisco.m.camposcunha@gmail.com
-          </a>{" "}
-          directly.
+          If it&rsquo;s urgent, call me directly on{" "}
+          <a href="tel:+31613605751">+31 6 13 60 57 51</a>.
         </p>
       </div>
     );
