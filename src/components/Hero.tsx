@@ -9,8 +9,8 @@ export default function Hero() {
         </h1>
         <div className={styles.below}>
           <p className={styles.lede}>
-            Operations consulting that ships working software when AI helps —
-            and tells you <em>plainly</em> when it won&rsquo;t.
+            Operations consulting that ships <em>AI solutions</em> when they
+            help — and tells you plainly when they don&rsquo;t.
           </p>
           <div className={styles.meta}>
             <span>Utrecht, NL</span>

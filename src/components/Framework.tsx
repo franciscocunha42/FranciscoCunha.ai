@@ -7,31 +7,22 @@ type Stage = {
   body: React.ReactNode;
   meta: string[];
   cta?: boolean;
-  pullQuote?: React.ReactNode;
 };
 
 const stages: Stage[] = [
   {
     numeral: "I",
     name: "Diagnostics",
-    suffix: "— on site",
+    suffix: "— on site or remote",
     body: (
       <>
-        A day or two walking your processes with the people who run them.
-        I leave with a written read of where AI helps — and where it doesn&rsquo;t —
-        and what&rsquo;s worth building next.
+        A few days walking your processes with the people who run them, plus
+        a written read of where AI helps — where it doesn&rsquo;t — and
+        what&rsquo;s worth building next.
       </>
     ),
     cta: true,
-    pullQuote: (
-      <>
-        <em>Gartner expects 30%+</em> of generative-AI projects to be abandoned
-        by end of 2025 — usually because of poor data quality, weak risk
-        controls, or unclear business value. The diagnostic is how we avoid
-        that trap before any code is written.
-      </>
-    ),
-    meta: ["Free", "~1–2 days"],
+    meta: ["Free", "~1–2 weeks"],
   },
   {
     numeral: "II",
@@ -39,12 +30,12 @@ const stages: Stage[] = [
     suffix: "",
     body: (
       <>
-        A scoped plan: what we&rsquo;d build, how, by when, and at what cost —
-        with the measurable improvement we&rsquo;re aiming for. You decide
-        whether to continue. No pressure.
+        A scoped plan: what I&rsquo;d build, how, by when, at what cost — and
+        the payback target it&rsquo;s measured against. You decide whether to
+        continue. No pressure.
       </>
     ),
-    meta: ["Free", "~1 week"],
+    meta: ["Free", "~1–2 weeks"],
   },
   {
     numeral: "III",
@@ -52,9 +43,10 @@ const stages: Stage[] = [
     suffix: "",
     body: (
       <>
-        Software is designed, built, and integrated. Your team is trained on it
-        as we go — not in a workshop afterwards. They own how it works before
-        launch day. Typical engagements ship in <em>4–8 weeks</em> from kickoff.
+        The solution is designed, built, and integrated. Your team is trained
+        on it as I go — not in a workshop afterwards. They own how it works
+        before launch day. Typical engagements ship in <em>4–8 weeks</em> from
+        kickoff.
       </>
     ),
     meta: ["Fixed scope", "weeks–months"],
@@ -93,7 +85,7 @@ export default function Framework() {
       aria-labelledby="framework-title"
     >
       <div className="container">
-        <p className="eyebrow">IV · Framework</p>
+        <p className="eyebrow">III · Framework</p>
         <h2 id="framework-title" className={styles.heading}>
           Five stages,<br />
           <em>one engagement.</em>
@@ -122,9 +114,6 @@ export default function Framework() {
                   <a className={`cta cta--primary ${styles.stageCta}`} href="#contact">
                     Book the free diagnostic <span aria-hidden>→</span>
                   </a>
-                )}
-                {s.pullQuote && (
-                  <aside className={styles.pullQuote}>{s.pullQuote}</aside>
                 )}
               </div>
               <div className={styles.meta}>

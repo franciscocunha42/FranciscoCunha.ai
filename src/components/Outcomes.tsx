@@ -3,49 +3,44 @@ import styles from "./Outcomes.module.css";
 const outcomes = [
   {
     n: "№ 01",
-    label: "Time",
-    title: "Less admin work.",
+    label: "Return",
+    title: "ROI you can defend.",
     body: (
       <>
-        Teams spend hours each week processing data the same way. Automate the
-        repetitive parts so people spend their day on <em>judgement</em>, not
-        data entry.
+        Every engagement is scoped considering payback to the customer —
+        agreed in writing before I start. Past engagements:{" "}
+        <em>500k€–5M€ annualised savings</em>, depending on scope.
       </>
     ),
   },
   {
     n: "№ 02",
-    label: "Quality",
-    title: "Fewer errors, better consistency.",
+    label: "Time",
+    title: "Less admin work.",
     body: (
       <>
-        Software-assisted checks catch what tired humans miss. Decisions become
-        more uniform across the team, even on the busy days.
+        Teams spend multiple hours per week processing data in a repetitive
+        way. Automation of the repetitive parts of operations — so people
+        spend their day on <em>judgement</em>, not data entry.
       </>
     ),
   },
   {
     n: "№ 03",
-    label: "Predictability",
-    title: "Clear and predictable systems.",
+    label: "Quality",
+    title: "Fewer errors, better consistency.",
     body: (
       <>
-        Defined handoffs, runbooks for the edge cases, monitoring on the parts
-        that matter. Less firefighting, fewer surprises.
+        AI-assisted checks catch what tired humans miss. Decisions become more
+        uniform across the team.
       </>
     ),
   },
   {
     n: "№ 04",
-    label: "Return",
-    title: "Practical ROI · measurable improvement.",
-    body: (
-      <>
-        Every engagement is scoped against a clear, measurable improvement —
-        agreed before we start, checked after we ship. Past engagements:{" "}
-        <em>500k€–5M€ annualised</em>, depending on scope.
-      </>
-    ),
+    label: "Calm",
+    title: "Less stress on your people.",
+    body: <>Predictable systems, clear handoffs, less firefighting.</>,
   },
 ];
 
@@ -53,10 +48,13 @@ export default function Outcomes() {
   return (
     <section className={`section ${styles.section}`} aria-labelledby="outcomes-title">
       <div className="container">
-        <p className="eyebrow">III · Outcomes</p>
+        <p className="eyebrow">II · Outcomes</p>
         <h2 id="outcomes-title" className={styles.heading}>
-          Four outcomes <em>I optimize for.</em>
+          Four outcomes <em>I optimise for.</em>
         </h2>
+        <p className={styles.sub}>
+          In plain language — before any technology is chosen.
+        </p>
         <div className={styles.grid}>
           {outcomes.map((o) => (
             <article key={o.n} className={styles.card}>

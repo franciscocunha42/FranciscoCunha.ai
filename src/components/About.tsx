@@ -4,14 +4,18 @@ export default function About() {
   return (
     <section className={`section ${styles.section}`} aria-labelledby="about-title">
       <div className="container">
-        <p className="eyebrow">VI · About</p>
+        <p className="eyebrow">V · Experience</p>
         <h2 id="about-title" className={styles.heading}>
-          The person who scopes the work<br />
-          <em>is the person who builds it.</em>
+          Senior, hands-on,<br />
+          <em>independent.</em>
         </h2>
+        <p className={styles.lede}>
+          A solo practice. The person who scopes the work is the person who
+          builds it — and the person who trains your team on it.
+        </p>
         <div className={styles.grid}>
           <div className={styles.bio}>
-            <p className="eyebrow">Background</p>
+            <p className="eyebrow">About me</p>
             <p>
               Industrial engineer. <em>8+ years</em> scaling warehousing and
               fulfilment operations across logistics, e-commerce, and B2B.
@@ -21,13 +25,9 @@ export default function About() {
             </p>
             <p>
               I take on a small number of engagements at a time. Each one gets
-              senior attention from start to finish.
-            </p>
-            <p>
-              Shipped operational software (<em>WMS</em> / <em>ERP</em> /
-              integrations) at multiple <em>1M+ stock-unit</em> warehouses with{" "}
-              <em>100+ users</em>. Typical engagements ship in 4–8 weeks from
-              kickoff.
+              senior attention from start to finish. Shipped operational
+              systems (<em>WMS</em> / <em>ERP</em> / integrations) at multiple{" "}
+              <em>1M+ stock-unit</em> warehouses with <em>100+ users</em>.
             </p>
           </div>
           <aside className={styles.col}>
@@ -41,7 +41,7 @@ export default function About() {
                 <em>Fixed scope</em> agreed in writing before kickoff.
               </li>
               <li>
-                <em>Working software</em> — not 80-page slide decks.
+                <em>Working solutions</em> — not 80-page slide decks.
               </li>
               <li>
                 Tech, ops, and people skills in one person. The same person

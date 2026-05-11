@@ -18,15 +18,15 @@ const inter = Inter({
 });
 
 const description =
-  "Operations consulting that ships working software when AI helps — and tells you plainly when it won't.";
+  "Operations consulting that ships AI solutions when they help — and tells you plainly when they don't.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://franciscocunha.ai"),
-  title: "Francisco Cunha — Operations Consultant · AI Implementation",
+  title: "Francisco Cunha — AI Solutions Architect · Operations",
   description,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Francisco Cunha — Operations Consultant · AI Implementation",
+    title: "Francisco Cunha — AI Solutions Architect · Operations",
     description,
     url: "https://franciscocunha.ai",
     siteName: "Francisco Cunha",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Francisco Cunha — Operations Consultant · AI Implementation",
+    title: "Francisco Cunha — AI Solutions Architect · Operations",
     description,
   },
   robots: { index: true, follow: true },

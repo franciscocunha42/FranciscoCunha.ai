@@ -6,7 +6,7 @@ export default function Masthead() {
       <div className={`container ${styles.row}`}>
         <span className={styles.left}>Francisco Cunha</span>
         <span className={styles.right}>
-          Operations Consultant <span className={styles.dot}>·</span> AI Implementation
+          AI Solutions Architect <span className={styles.dot}>·</span> Operations
         </span>
       </div>
       <hr className="rule" />

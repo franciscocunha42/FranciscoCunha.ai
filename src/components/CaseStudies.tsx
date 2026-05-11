@@ -26,7 +26,7 @@ const cases: Case[] = [
     ),
     result: (
       <span className="result">
-        5M€+ in savings, 1M€+ revenue uplift, on-time go-live.
+        €5M+ in savings, €1M+ revenue uplift, on-time go-live.
       </span>
     ),
   },
@@ -47,7 +47,7 @@ const cases: Case[] = [
       </>
     ),
     result: (
-      <span className="result">5M+ stock units live on schedule.</span>
+      <span className="result">5M+ stock units, on-time go-live.</span>
     ),
   },
 ];
@@ -56,7 +56,7 @@ export default function CaseStudies() {
   return (
     <section className={`section ${styles.section}`} aria-labelledby="cases-title">
       <div className="container">
-        <p className="eyebrow">V · Case studies</p>
+        <p className="eyebrow">IV · Case studies</p>
         <h2 id="cases-title" className={styles.heading}>
           Senior, hands-on,<br />
           <em>independent.</em>

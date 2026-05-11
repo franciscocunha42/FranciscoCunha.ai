@@ -10,7 +10,7 @@ export default function Differentiator() {
           and the people who&rsquo;ll actually use it.
         </p>
         <p className={styles.sub}>
-          Solo practice. Fixed scope before kickoff. <em>Working software</em>,
+          Solo practice. Fixed scope before kickoff. <em>Working solutions</em>,
           not 80-page decks.
         </p>
       </div>
