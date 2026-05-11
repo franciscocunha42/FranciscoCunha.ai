@@ -19,7 +19,9 @@ const cases: Case[] = [
     ),
     did: (
       <>
-        Scoped <em>WMS</em> requirements end-to-end for the new hub.
+        Scoped <em>WMS</em> requirements end-to-end for the new hub, defined
+        business processes for the whole warehouse, and developed solutions to
+        tackle specific use cases.
       </>
     ),
     result: (
