@@ -3,13 +3,11 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <section className={`section ${styles.hero}`} aria-labelledby="hero-title">
-      <div className={`container ${styles.grid}`}>
+      <div className="container">
         <h1 id="hero-title" className={styles.title}>
-          Operations,<br />
-          optimized<br />
-          <em>with AI.</em>
+          Operations, optimized <em>with AI.</em>
         </h1>
-        <div className={styles.right}>
+        <div className={styles.below}>
           <p className={styles.lede}>
             Operations consulting that ships working software when AI helps —
             and tells you <em>plainly</em> when it won&rsquo;t.

@@ -1,61 +1,53 @@
 .hero {
   padding-top: 56px;
+  padding-bottom: 96px;
 }
 
 @media (min-width: 768px) {
   .hero {
-    padding-top: 88px;
-  }
-}
-
-.grid {
-  display: grid;
-  gap: 48px;
-  align-items: end;
-}
-
-@media (min-width: 860px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: end;
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: 58fr 42fr;
-    gap: 80px;
+    padding-top: 96px;
+    padding-bottom: 128px;
   }
 }
 
 .title {
-  font-size: clamp(3.2rem, 8vw, 6.4rem);
-  line-height: 1.0;
+  font-size: clamp(3rem, 9vw, 7.5rem);
+  line-height: 1.02;
   letter-spacing: -0.02em;
   margin: 0;
+  max-width: 18ch;
 }
 
-.right {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding-bottom: 12px;
+.below {
+  margin-top: 56px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr;
 }
 
-@media (min-width: 860px) {
-  .right {
-    border-left: 1px solid var(--rule);
-    padding-left: 48px;
+@media (min-width: 900px) {
+  .below {
+    margin-top: 72px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 48px 80px;
+    align-items: start;
   }
 }
 
 .lede {
   font-family: var(--font-serif), serif;
-  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  font-size: clamp(1.2rem, 1.9vw, 1.55rem);
   line-height: 1.4;
   color: var(--ink);
-  max-width: 36ch;
+  max-width: 38ch;
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .lede {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 .meta {
@@ -64,6 +56,15 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--ink-soft);
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .meta {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+  }
 }
 
 .sep {
@@ -76,6 +77,13 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .ctaRow {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
 
 .chip {
@@ -97,5 +105,13 @@
   font-size: 0.95rem;
   line-height: 1.55;
   color: var(--ink-soft);
-  max-width: 40ch;
+  max-width: 44ch;
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .ctaNote {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
