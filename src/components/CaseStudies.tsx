@@ -19,9 +19,7 @@ const cases: Case[] = [
     ),
     did: (
       <>
-        Scoped <em>WMS</em> requirements end-to-end, ran the vendor selection,
-        led integration design with ERP and carrier systems, and shaped the
-        operational blueprint for inbound, putaway, picking, and outbound.
+        Scoped <em>WMS</em> requirements end-to-end for the new hub.
       </>
     ),
     result: (
