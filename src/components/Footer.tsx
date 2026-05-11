@@ -6,7 +6,6 @@ export default function Footer() {
       <hr className="rule" />
       <div className={`container ${styles.row}`}>
         <span>© MMXXVI · Francisco Cunha</span>
-        <span className={styles.right}>franciscocunha.ai</span>
       </div>
     </footer>
   );

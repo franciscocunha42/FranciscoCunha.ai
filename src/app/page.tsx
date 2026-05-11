@@ -1,6 +1,5 @@
 import Masthead from "@/components/Masthead";
 import Hero from "@/components/Hero";
-import AboutLede from "@/components/AboutLede";
 import Problem from "@/components/Problem";
 import Outcomes from "@/components/Outcomes";
 import Differentiator from "@/components/Differentiator";
@@ -16,7 +15,6 @@ export default function Page() {
       <Masthead />
       <main>
         <Hero />
-        <AboutLede />
         <Problem />
         <Outcomes />
         <Differentiator />
