@@ -75,6 +75,7 @@ p {
 em {
   font-style: italic;
   font-family: var(--font-serif), "EB Garamond", Garamond, serif;
+  padding-right: 0.06em;
 }
 
 .container {

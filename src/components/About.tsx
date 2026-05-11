@@ -30,31 +30,6 @@ export default function About() {
               kickoff.
             </p>
           </div>
-          <div className={styles.col}>
-            <p className="eyebrow">How I work with teams</p>
-            <ul className={styles.list}>
-              <li>
-                Walk the floor with operators before specifying anything.
-                Their workflow is the source of truth.
-              </li>
-              <li>
-                Translate real work into requirements without the
-                consulting-deck abstraction layer.
-              </li>
-              <li>
-                Train users <em>as we build</em> — not in a workshop the
-                week before launch.
-              </li>
-              <li>
-                Stay engaged through cutover and hyper-care so issues get
-                resolved without escalation drama.
-              </li>
-              <li>
-                Write the runbooks the team will actually use after I&rsquo;m
-                gone.
-              </li>
-            </ul>
-          </div>
           <aside className={styles.col}>
             <p className="eyebrow">Why me — not a traditional consultancy</p>
             <ul className={styles.list}>
@@ -63,7 +38,7 @@ export default function About() {
                 handover.
               </li>
               <li>
-                <em>Fixed scope</em> before kickoff. Payback target in writing.
+                <em>Fixed scope</em> agreed in writing before kickoff.
               </li>
               <li>
                 <em>Working software</em> — not 80-page slide decks.

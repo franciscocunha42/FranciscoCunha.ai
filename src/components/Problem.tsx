@@ -20,7 +20,7 @@ export default function Problem() {
         <p className="eyebrow eyebrow--on-navy">II · The problem</p>
         <h2 id="problem-title" className={styles.headline}>
           Most operations problems aren&rsquo;t AI problems.<br />
-          They&rsquo;re <em>software-and-process</em> problems hiding in plain sight.
+          They&rsquo;re <em>software and process</em> problems hiding in plain sight.
         </h2>
         <ul className={styles.list} aria-label="Operational pain points">
           {pains.map((p) => (

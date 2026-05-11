@@ -4,7 +4,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    padding-top: 96px;
+    padding-top: 88px;
   }
 }
 
@@ -24,28 +24,23 @@
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: 55fr 45fr;
+    grid-template-columns: 58fr 42fr;
     gap: 80px;
   }
 }
 
-.left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .title {
-  font-size: clamp(3rem, 7vw, 5.6rem);
-  line-height: 1.02;
+  font-size: clamp(3.2rem, 8vw, 6.4rem);
+  line-height: 1.0;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 
 .right {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: 860px) {

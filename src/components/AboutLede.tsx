@@ -6,8 +6,9 @@ export default function AboutLede() {
       <div className={`container ${styles.body}`}>
         <p className="eyebrow">Who&rsquo;s behind this</p>
         <h2 id="lede-title" className={styles.headline}>
-          <em>Francisco Cunha.</em> Industrial engineer.<br />
-          Solo practice.
+          <em>Francisco Cunha.</em>
+          <br />
+          Industrial engineer, running a solo practice.
         </h2>
         <p className={styles.lede}>
           <em>8+ years</em> scaling warehousing and fulfilment operations

@@ -45,6 +45,11 @@
   border-top: 1px solid var(--rule);
 }
 
+.stageCta {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
 .pullQuote {
   margin-top: 6px;
   padding: 16px 20px;

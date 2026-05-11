@@ -4,12 +4,11 @@ export default function Hero() {
   return (
     <section className={`section ${styles.hero}`} aria-labelledby="hero-title">
       <div className={`container ${styles.grid}`}>
-        <div className={styles.left}>
-          <p className="eyebrow">I · Scope</p>
-          <h1 id="hero-title" className={styles.title}>
-            Operations,<br />optimized<br /><em>with AI.</em>
-          </h1>
-        </div>
+        <h1 id="hero-title" className={styles.title}>
+          Operations,<br />
+          optimized<br />
+          <em>with AI.</em>
+        </h1>
         <div className={styles.right}>
           <p className={styles.lede}>
             Operations consulting that ships working software when AI helps —

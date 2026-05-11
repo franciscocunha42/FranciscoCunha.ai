@@ -41,8 +41,8 @@ const outcomes = [
     title: "Practical ROI · measurable improvement.",
     body: (
       <>
-        Each engagement is scoped against a written payback target — agreed
-        before we start, measured after we ship. Past engagements:{" "}
+        Every engagement is scoped against a clear, measurable improvement —
+        agreed before we start, checked after we ship. Past engagements:{" "}
         <em>500k€–5M€ annualised</em>, depending on scope.
       </>
     ),
@@ -55,8 +55,7 @@ export default function Outcomes() {
       <div className="container">
         <p className="eyebrow">III · Outcomes</p>
         <h2 id="outcomes-title" className={styles.heading}>
-          Four outcomes I optimize for —<br />
-          <em>before any technology is chosen.</em>
+          Four outcomes <em>I optimize for.</em>
         </h2>
         <div className={styles.grid}>
           {outcomes.map((o) => (

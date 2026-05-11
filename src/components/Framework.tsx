@@ -1,6 +1,16 @@
 import styles from "./Framework.module.css";
 
-const stages = [
+type Stage = {
+  numeral: string;
+  name: string;
+  suffix: string;
+  body: React.ReactNode;
+  meta: string[];
+  cta?: boolean;
+  pullQuote?: React.ReactNode;
+};
+
+const stages: Stage[] = [
   {
     numeral: "I",
     name: "Diagnostics",
@@ -12,6 +22,7 @@ const stages = [
         and what&rsquo;s worth building next.
       </>
     ),
+    cta: true,
     pullQuote: (
       <>
         <em>Gartner expects 30%+</em> of generative-AI projects to be abandoned
@@ -28,9 +39,9 @@ const stages = [
     suffix: "",
     body: (
       <>
-        A scoped plan: what we&rsquo;d build, how, by when, at what cost — and
-        the payback target it&rsquo;s measured against. You decide whether to
-        continue. No pressure.
+        A scoped plan: what we&rsquo;d build, how, by when, and at what cost —
+        with the measurable improvement we&rsquo;re aiming for. You decide
+        whether to continue. No pressure.
       </>
     ),
     meta: ["Free", "~1 week"],
@@ -107,6 +118,11 @@ export default function Framework() {
                   {s.suffix && <span className={styles.suffix}> {s.suffix}</span>}
                 </h3>
                 <p className={styles.desc}>{s.body}</p>
+                {s.cta && (
+                  <a className={`cta cta--primary ${styles.stageCta}`} href="#contact">
+                    Book the free diagnostic <span aria-hidden>→</span>
+                  </a>
+                )}
                 {s.pullQuote && (
                   <aside className={styles.pullQuote}>{s.pullQuote}</aside>
                 )}

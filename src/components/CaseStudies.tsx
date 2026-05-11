@@ -4,7 +4,6 @@ type Case = {
   eyebrow: string;
   context: React.ReactNode;
   did: React.ReactNode;
-  team: React.ReactNode;
   result: React.ReactNode;
 };
 
@@ -23,13 +22,6 @@ const cases: Case[] = [
         Scoped <em>WMS</em> requirements end-to-end, ran the vendor selection,
         led integration design with ERP and carrier systems, and shaped the
         operational blueprint for inbound, putaway, picking, and outbound.
-      </>
-    ),
-    team: (
-      <>
-        Walked the floor daily with the operations team. Translated their real
-        workflows into requirements the vendor could build against. Trained
-        team leads through UAT so they owned the system before go-live.
       </>
     ),
     result: (
@@ -52,13 +44,6 @@ const cases: Case[] = [
         Owned end-to-end <em>UAT</em> across <em>WMS</em>, <em>ERP</em>, and
         carrier integrations. Wrote the test plan, ran the cycles, triaged
         defects with vendors, and signed off readiness for cutover.
-      </>
-    ),
-    team: (
-      <>
-        Embedded with the warehouse and IT teams through cutover weekend.
-        Built the runbooks the team still uses, and stayed on hand through
-        hyper-care so issues got resolved without escalation drama.
       </>
     ),
     result: (
@@ -85,8 +70,6 @@ export default function CaseStudies() {
                 <dd>{c.context}</dd>
                 <dt>What I did</dt>
                 <dd>{c.did}</dd>
-                <dt>Working with the team</dt>
-                <dd>{c.team}</dd>
                 <dt>Result</dt>
                 <dd className={styles.resultLine}>{c.result}</dd>
               </dl>
