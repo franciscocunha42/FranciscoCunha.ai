@@ -5,29 +5,26 @@ import styles from "./ContactForm.module.css";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
-const endpoint = formspreeId
-  ? `https://formspree.io/f/${formspreeId}`
-  : null;
-
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-    if (!endpoint) return; // mailto fallback handles itself
     e.preventDefault();
     setStatus("submitting");
     setError(null);
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const data = Object.fromEntries(new FormData(form).entries());
     try {
-      const res = await fetch(endpoint, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(data),
       });
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+      if (!res.ok) {
+        const payload = await res.json().catch(() => null);
+        throw new Error(payload?.error || `Request failed (${res.status})`);
+      }
       setStatus("success");
       form.reset();
     } catch (err) {
@@ -45,8 +42,8 @@ export default function ContactForm() {
         <p className={styles.successBody}>
           You&rsquo;ll get a reply within one business day. If it&rsquo;s
           urgent, email{" "}
-          <a href="mailto:francisco@franciscocunha.ai">
-            francisco@franciscocunha.ai
+          <a href="mailto:francisco.m.camposcunha@gmail.com">
+            francisco.m.camposcunha@gmail.com
           </a>{" "}
           directly.
         </p>
@@ -54,19 +51,8 @@ export default function ContactForm() {
     );
   }
 
-  const fallbackAction = endpoint
-    ? undefined
-    : "mailto:francisco@franciscocunha.ai";
-
   return (
-    <form
-      className={styles.form}
-      onSubmit={onSubmit}
-      action={fallbackAction}
-      method={fallbackAction ? "post" : undefined}
-      encType={fallbackAction ? "text/plain" : undefined}
-      noValidate
-    >
+    <form className={styles.form} onSubmit={onSubmit} noValidate>
       <div className={styles.row}>
         <label className={styles.field}>
           <span className={styles.label}>Name</span>
@@ -126,16 +112,11 @@ export default function ContactForm() {
             ? "Sending…"
             : "Request the free diagnostic →"}
         </button>
-        {!endpoint && (
-          <span className={styles.note}>
-            (Form opens your email client — backend not configured.)
-          </span>
-        )}
         {status === "error" && (
           <span className={styles.errorMsg} role="alert">
-            Something went wrong{error ? `: ${error}` : ""}. Please email{" "}
-            <a href="mailto:francisco@franciscocunha.ai">
-              francisco@franciscocunha.ai
+            {error || "Something went wrong"}. Please email{" "}
+            <a href="mailto:francisco.m.camposcunha@gmail.com">
+              francisco.m.camposcunha@gmail.com
             </a>
             .
           </span>

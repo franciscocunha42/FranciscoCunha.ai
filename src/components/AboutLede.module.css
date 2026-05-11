@@ -3,44 +3,18 @@
   padding: 72px 0;
 }
 
-.grid {
-  display: grid;
-  gap: 40px;
-  align-items: start;
-}
-
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: 320px 1fr;
-    gap: 64px;
-  }
-}
-
-.portraitWrap {
-  width: 100%;
-  max-width: 320px;
-  background: var(--cream-soft);
-  border: 1px solid var(--rule);
-}
-
-.portrait {
-  width: 100%;
-  height: auto;
-  display: block;
-  filter: grayscale(20%);
-}
-
 .body {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  max-width: 56ch;
+  max-width: 64ch;
 }
 
 .headline {
-  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
   line-height: 1.15;
   margin-top: 4px;
+  max-width: 26ch;
 }
 
 .lede {
@@ -48,5 +22,5 @@
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   line-height: 1.55;
   color: var(--ink);
-  max-width: 52ch;
+  max-width: 56ch;
 }

@@ -8,7 +8,15 @@ npm run dev      # http://localhost:3000
 npm run build    # production build
 ```
 
-## Configuration
+## Contact form
 
-- **Contact form** — copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_FORMSPREE_ID` to your Formspree endpoint ID. If unset, the form falls back to a `mailto:` action so the page still works in dev.
-- **Portrait** — drop a JPG at `public/portrait.jpg` (recommended 720×920, ~150 KB) for the About-Lede block.
+The form at the bottom of the page posts to `POST /api/contact`, a Next.js Route Handler that emails `francisco.m.camposcunha@gmail.com` via SMTP using `nodemailer`.
+
+Copy `.env.example` to `.env.local` and fill in:
+
+- `SMTP_HOST`, `SMTP_PORT` — `smtp.gmail.com:465` works for a personal Gmail.
+- `SMTP_USER` — the sending Gmail address.
+- `SMTP_PASS` — a Gmail **App Password** (Google account → Security → 2-Step Verification → App passwords).
+- `SMTP_FROM` — formatted sender, e.g. `"Francisco Cunha <francisco.m.camposcunha@gmail.com>"`.
+
+If the env vars are missing in production the route returns HTTP 500 and the form shows an inline error pointing to the mailto fallback.

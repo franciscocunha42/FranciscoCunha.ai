@@ -21,8 +21,8 @@ export default function CTA() {
         <ContactForm />
         <p className={styles.fallback}>
           Prefer email?{" "}
-          <a href="mailto:francisco@franciscocunha.ai?subject=Diagnostic%20enquiry">
-            francisco@franciscocunha.ai
+          <a href="mailto:francisco.m.camposcunha@gmail.com?subject=Diagnostic%20enquiry">
+            francisco.m.camposcunha@gmail.com
           </a>
         </p>
         <hr className="rule rule--on-navy" />
