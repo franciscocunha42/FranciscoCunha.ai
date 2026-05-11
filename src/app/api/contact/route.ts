@@ -9,6 +9,7 @@ type Payload = {
   name?: string;
   email?: string;
   company?: string;
+  phone?: string;
   message?: string;
   _gotcha?: string;
 };
@@ -40,6 +41,7 @@ export async function POST(req: Request) {
   const name = (body.name || "").trim();
   const email = (body.email || "").trim();
   const company = (body.company || "").trim();
+  const phone = (body.phone || "").trim();
   const message = (body.message || "").trim();
 
   if (!name || !email || !company) {
@@ -81,6 +83,7 @@ export async function POST(req: Request) {
     `Name:    ${name}`,
     `Email:   ${email}`,
     `Company: ${company}`,
+    `Phone:   ${phone || "(not provided)"}`,
     "",
     message || "(no message)",
   ].join("\n");
@@ -88,6 +91,7 @@ export async function POST(req: Request) {
     <p><strong>Name:</strong> ${escape(name)}</p>
     <p><strong>Email:</strong> <a href="mailto:${escape(email)}">${escape(email)}</a></p>
     <p><strong>Company:</strong> ${escape(company)}</p>
+    <p><strong>Phone:</strong> ${phone ? `<a href="tel:${escape(phone)}">${escape(phone)}</a>` : "<em>(not provided)</em>"}</p>
     <hr/>
     <p style="white-space:pre-wrap">${escape(message) || "<em>(no message)</em>"}</p>
   `;

@@ -71,16 +71,27 @@ export default function ContactForm() {
           />
         </label>
       </div>
-      <label className={styles.field}>
-        <span className={styles.label}>Company</span>
-        <input
-          type="text"
-          name="company"
-          required
-          autoComplete="organization"
-          className={styles.input}
-        />
-      </label>
+      <div className={styles.row}>
+        <label className={styles.field}>
+          <span className={styles.label}>Company</span>
+          <input
+            type="text"
+            name="company"
+            required
+            autoComplete="organization"
+            className={styles.input}
+          />
+        </label>
+        <label className={styles.field}>
+          <span className={styles.label}>Phone · optional</span>
+          <input
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+            className={styles.input}
+          />
+        </label>
+      </div>
       <label className={styles.field}>
         <span className={styles.label}>Message · optional</span>
         <textarea
