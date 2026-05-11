@@ -58,8 +58,8 @@ export default function CaseStudies() {
       <div className="container">
         <p className="eyebrow">IV · Case studies</p>
         <h2 id="cases-title" className={styles.heading}>
-          Senior, hands-on,<br />
-          <em>independent.</em>
+          Recent work,<br />
+          <em>real results.</em>
         </h2>
         <div className={styles.grid}>
           {cases.map((c) => (
