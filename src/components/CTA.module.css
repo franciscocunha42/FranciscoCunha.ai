@@ -1,28 +1,28 @@
 .heading {
   margin-top: 20px;
   max-width: 16ch;
-  color: var(--cream);
+  color: var(--paper);
 }
 
 .sub {
   margin-top: 28px;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   line-height: 1.45;
   max-width: 38ch;
-  color: rgba(244, 238, 226, 0.86);
+  color: rgba(244, 247, 251, 0.86);
 }
 
 .fallback {
   margin-top: 28px;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: 1rem;
-  color: rgba(244, 238, 226, 0.78);
+  color: rgba(244, 247, 251, 0.78);
 }
 
 .fallback a {
-  color: var(--cream);
-  border-bottom-color: rgba(244, 238, 226, 0.4);
+  color: var(--paper);
+  border-bottom-color: rgba(244, 247, 251, 0.4);
 }
 
 .contact {
@@ -49,17 +49,17 @@
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(244, 238, 226, 0.6);
+  color: rgba(244, 247, 251, 0.6);
   font-weight: 500;
 }
 
 .contact dd {
   margin: 0;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: 1.1rem;
-  color: var(--cream);
+  color: var(--paper);
 }
 
 .contact a {
-  border-bottom-color: rgba(244, 238, 226, 0.3);
+  border-bottom-color: rgba(244, 247, 251, 0.3);
 }

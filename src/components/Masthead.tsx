@@ -7,7 +7,8 @@ export default function Masthead() {
       <div className={`container ${styles.row}`}>
         <Logo />
         <span className={styles.right}>
-          Operations <span className={styles.dot}>·</span> AI Solutions
+          Business <span className={styles.dot}>·</span> Operations{" "}
+          <span className={styles.dot}>·</span> Supply Chain
         </span>
       </div>
       <hr className="rule" />

@@ -8,15 +8,30 @@ npm run dev      # http://localhost:3000
 npm run build    # production build
 ```
 
-## Contact form
+## How it's built
 
-The form at the bottom of the page posts to `POST /api/contact`, a Next.js Route Handler that emails `francisco.m.camposcunha@gmail.com` via SMTP using `nodemailer`.
+- Next.js static export (`output: "export"`) — `npm run build` writes the site to `out/`.
+- The contact form posts to `/api/contact`, a **Cloudflare Pages Function** in `functions/api/contact.ts`. It emails `francisco.m.camposcunha@gmail.com` through the [Resend](https://resend.com) HTTP API.
 
-Copy `.env.example` to `.env.local` and fill in:
+## Deploy to Cloudflare Pages
 
-- `SMTP_HOST`, `SMTP_PORT` — `smtp.gmail.com:465` works for a personal Gmail.
-- `SMTP_USER` — the sending Gmail address.
-- `SMTP_PASS` — a Gmail **App Password** (Google account → Security → 2-Step Verification → App passwords).
-- `SMTP_FROM` — formatted sender, e.g. `"Francisco Cunha <francisco.m.camposcunha@gmail.com>"`.
+1. **Resend (email):** sign up at resend.com → *Domains* → add your domain and add the DNS records it shows (on Cloudflare DNS) → *API Keys* → create a key.
+2. **Cloudflare:** dashboard → *Workers & Pages* → *Create* → *Pages* → *Connect to Git* → pick this repo.
+   - Production branch: the branch you want live (e.g. `main`).
+   - Framework preset: *Next.js (Static HTML Export)*
+   - Build command: `npm run build` · Build output directory: `out`
+   - Environment variable: `NODE_VERSION` = `22`
+3. **Secrets:** project → *Settings* → *Variables and Secrets* → add `RESEND_API_KEY` (as a secret), `CONTACT_FROM` (e.g. `Campos Cunha Consulting <contact@yourdomain>`), optionally `CONTACT_TO`. Redeploy.
+4. **Domain:** project → *Custom domains* → add your domain.
 
-If the env vars are missing in production the route returns HTTP 500 and the form shows an inline error pointing to the mailto fallback.
+Every push to the production branch redeploys automatically; other branches get preview URLs.
+
+## Testing the form locally
+
+```bash
+npm run build
+cp .env.example .dev.vars   # fill in the values
+npx wrangler pages dev out  # http://localhost:8788
+```
+
+With `npm run dev` the form has no backend and falls back to the mailto link.

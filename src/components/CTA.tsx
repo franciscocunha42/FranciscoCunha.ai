@@ -11,12 +11,12 @@ export default function CTA() {
       <div className="container">
         <p className="eyebrow eyebrow--on-navy">Get in touch</p>
         <h2 id="cta-title" className={styles.heading}>
-          Curious where AI <em>actually</em>{" "}fits in your business?
+          Let&rsquo;s talk about <em>your business.</em>
         </h2>
         <p className={styles.sub}>
           The first stage — an on-site (or remote) diagnostic of your
-          processes — is on me. I end with a clear, written proposal on
-          what&rsquo;s worth building, what isn&rsquo;t, and what it would
+          business — is on me. I end with a clear, written proposal on
+          what&rsquo;s worth doing, what isn&rsquo;t, and what it would
           cost. <em>No commitment to continue.</em>
         </p>
         <ContactForm />

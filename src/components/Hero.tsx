@@ -5,13 +5,15 @@ export default function Hero() {
     <section className={`section ${styles.hero}`} aria-labelledby="hero-title">
       <div className="container">
         <h1 id="hero-title" className={styles.title}>
-          Operations, optimized <em>with AI.</em>
+          Grow your business.{" "}
+          <em>Run it better.</em>
         </h1>
         <div className={styles.below}>
           <p className={styles.lede}>
             Campos Cunha Consulting is the independent practice of Francisco
-            Cunha — operations consulting that ships <em>AI solutions</em>{" "}when
-            they help, and tells you plainly when they don&rsquo;t.
+            Cunha. I help small and medium businesses get online, sell more,
+            and scale — and help logistics and e-commerce teams run leaner,
+            from warehouse floor to system go-live.
           </p>
           <div className={styles.meta}>
             <span>Utrecht, NL</span>

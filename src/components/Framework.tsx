@@ -16,9 +16,9 @@ const stages: Stage[] = [
     suffix: "— on site or remote",
     body: (
       <>
-        A few days walking your processes with the people who run them, plus
-        a written read of where AI helps — where it doesn&rsquo;t — and
-        what&rsquo;s worth building next.
+        A few days walking your business with the people who run it, plus a
+        written read of where the biggest opportunities are — and what&rsquo;s
+        worth doing first.
       </>
     ),
     cta: true,
@@ -70,8 +70,8 @@ const stages: Stage[] = [
     suffix: "",
     body: (
       <>
-        Optional ongoing support: model updates, small improvements, and a
-        senior pair of eyes as your needs and the AI landscape evolve.
+        Optional ongoing support: website and content updates, small
+        improvements, and a senior pair of eyes as your business grows.
       </>
     ),
     meta: ["Optional", "Monthly retainer"],
@@ -81,7 +81,7 @@ const stages: Stage[] = [
 export default function Framework() {
   return (
     <section
-      className={`section panel-cream-soft ${styles.section}`}
+      className={`section panel-soft ${styles.section}`}
       aria-labelledby="framework-title"
     >
       <div className="container">

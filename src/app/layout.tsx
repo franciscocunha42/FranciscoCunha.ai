@@ -1,25 +1,24 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const garamond = EB_Garamond({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["400", "500"],
-  style: ["normal", "italic"],
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["400", "500"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
-const title = "Campos Cunha Consulting — Operations, optimized with AI";
+const title = "Campos Cunha Consulting — Business & Operations Consulting";
 const description =
-  "The independent practice of Francisco Cunha. Operations consulting that ships AI solutions when they help — and tells you plainly when they don't.";
+  "The independent practice of Francisco Cunha. SME consulting — websites, social media, sales and operations — and operations & supply chain consulting for logistics and e-commerce.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://franciscocunha.ai"),
@@ -48,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${garamond.variable} ${inter.variable}`}>
+    <html lang="en" className={`${jakarta.variable} ${inter.variable}`}>
       <body>{children}</body>
     </html>
   );

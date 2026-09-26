@@ -4,8 +4,8 @@ import styles from "./About.module.css";
 const background = [
   { dt: "Previously", dd: "GXO Logistics · Farfetch (Coupang Group) · Kaizen Institute" },
   { dt: "Education", dd: "MSc Industrial Engineering & Management, University of Porto" },
-  { dt: "Methods", dd: "Lean Six Sigma · Kaizen · Project Management (PMP® foundations)" },
-  { dt: "Recognition", dd: "Kaizen Award for Digitalization" },
+  { dt: "Methods", dd: "Lean Six Sigma · Kaizen · Project Management (PMP® foundations) · Product & Growth Management" },
+  { dt: "Recognition", dd: "Kaizen Award for Digitalization · Winner, Startup Pirates" },
 ];
 
 export default function About() {
@@ -40,9 +40,10 @@ export default function About() {
             <p className="eyebrow">About me</p>
             <p>
               Industrial engineer with <em>8+ years</em>{" "}across contract
-              logistics, e-commerce fulfilment, and Lean consulting. I&rsquo;ve
-              owned delivery end to end — from the first process walk to
-              go-live and the improvements that follow.
+              logistics, e-commerce, and Lean consulting — with a background
+              in product and growth management. I&rsquo;ve owned delivery end
+              to end, from the first process walk to go-live and the
+              improvements that follow.
             </p>
             <p>
               I&rsquo;ve taken warehouses and systems live on time
@@ -52,8 +53,11 @@ export default function About() {
               across the US, the Netherlands, and Portugal.
             </p>
             <p>
-              I take on a small number of engagements at a time. Each one gets
-              senior attention from start to finish.
+              I bring the same discipline to small and medium businesses: a
+              website that works, a consistent social presence, and sales and
+              operations that scale. I take on a small number of engagements
+              at a time, and each one gets senior attention from start to
+              finish.
             </p>
             <dl className={styles.background}>
               {background.map((b) => (

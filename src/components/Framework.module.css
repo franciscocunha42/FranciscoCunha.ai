@@ -9,7 +9,7 @@
   flex-direction: column;
   gap: 8px;
   padding: 24px 28px;
-  background: var(--cream);
+  background: var(--paper);
   border: 1px solid var(--accent);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .bannerBody {
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: 1.05rem;
   line-height: 1.5;
   color: var(--ink);
@@ -55,7 +55,7 @@
   padding: 16px 20px;
   border-left: 2px solid var(--accent);
   background: rgba(74, 109, 146, 0.06);
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: 0.98rem;
   line-height: 1.5;
   color: var(--ink-soft);
@@ -95,7 +95,7 @@
 
 .suffix {
   font-style: normal;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   color: var(--ink-soft);
 }
 
@@ -131,7 +131,7 @@
 
 .footnote {
   margin-top: 48px;
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), sans-serif;
   font-size: 1.1rem;
   color: var(--ink-soft);
   max-width: 60ch;

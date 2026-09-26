@@ -3,13 +3,12 @@ import styles from "./Outcomes.module.css";
 const outcomes = [
   {
     n: "№ 01",
-    label: "Return",
-    title: "ROI you can defend.",
+    label: "Growth",
+    title: "More customers, more revenue.",
     body: (
       <>
-        Every engagement is scoped considering payback to the customer —
-        agreed in writing before I start. Past engagements:{" "}
-        <em>500k€–5M€ annualised savings</em>, depending on scope.
+        A clear online presence and a sales process that doesn&rsquo;t depend
+        on luck — so growth becomes <em>repeatable</em>.
       </>
     ),
   },
@@ -19,9 +18,8 @@ const outcomes = [
     title: "Less admin work.",
     body: (
       <>
-        Teams spend multiple hours per week processing data in a repetitive
-        way. Automation of the repetitive parts of operations — so people
-        spend their day on <em>judgement</em>, not data entry.
+        Repetitive work removed or automated, so your people spend their day
+        on <em>judgement</em>, not data entry.
       </>
     ),
   },
@@ -31,16 +29,22 @@ const outcomes = [
     title: "Fewer errors, better consistency.",
     body: (
       <>
-        AI-assisted checks catch what tired humans miss. Decisions become more
-        uniform across the team.
+        Clear processes and the right tools mean fewer mistakes, fewer
+        complaints, and more uniform decisions across the team.
       </>
     ),
   },
   {
     n: "№ 04",
-    label: "Calm",
-    title: "Less stress on your people.",
-    body: <>Predictable systems, clear handoffs, less firefighting.</>,
+    label: "Return",
+    title: "ROI you can defend.",
+    body: (
+      <>
+        Every engagement is scoped around payback — agreed in writing before
+        I start. Past operations work:{" "}
+        <em>€500k–€5M annualised savings</em>, depending on scope.
+      </>
+    ),
   },
 ];
 
@@ -53,7 +57,7 @@ export default function Outcomes() {
           Four outcomes <em>I optimise for.</em>
         </h2>
         <p className={styles.sub}>
-          In plain language — before any technology is chosen.
+          In plain language — whatever the size of your business.
         </p>
         <div className={styles.grid}>
           {outcomes.map((o) => (

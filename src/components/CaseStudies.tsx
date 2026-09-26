@@ -39,7 +39,7 @@ const cases: Case[] = [
     ),
     result: (
       <span className="result">
-        €5M+ in annual savings, on-time go-live.
+        €5M+ in annual savings, €1M+ revenue uplift, on-time go-live.
       </span>
     ),
   },

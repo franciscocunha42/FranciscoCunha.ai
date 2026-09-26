@@ -98,7 +98,7 @@ export default function ContactForm() {
           name="message"
           rows={4}
           className={styles.textarea}
-          placeholder="A line or two about the operation, the problem, or where you'd like to start."
+          placeholder="A line or two about your business, the problem, or where you'd like to start."
         />
       </label>
       <input
