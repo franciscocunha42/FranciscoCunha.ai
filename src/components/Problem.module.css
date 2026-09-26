@@ -34,7 +34,7 @@
   margin: 0;
   padding: 24px 24px 20px;
   background: rgba(244, 238, 226, 0.06);
-  border-left: 2px solid var(--terracotta);
+  border-left: 2px solid var(--steel);
 }
 
 .stat p {
@@ -83,6 +83,6 @@
 }
 
 .tick {
-  color: var(--terracotta);
+  color: var(--steel);
   font-weight: 500;
 }

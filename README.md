@@ -1,6 +1,6 @@
-# franciscocunha.ai
+# Campos Cunha Consulting — franciscocunha.ai
 
-Editorial landing page for Francisco Cunha — Operations Consultant · AI Implementation.
+Editorial landing page for Campos Cunha Consulting (KVK 42156042), the independent practice of Francisco Cunha.
 
 ```bash
 npm install

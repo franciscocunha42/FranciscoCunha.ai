@@ -11,7 +11,7 @@ export default function CTA() {
       <div className="container">
         <p className="eyebrow eyebrow--on-navy">Get in touch</p>
         <h2 id="cta-title" className={styles.heading}>
-          Curious where AI <em>actually</em> fits in your business?
+          Curious where AI <em>actually</em>{" "}fits in your business?
         </h2>
         <p className={styles.sub}>
           The first stage — an on-site (or remote) diagnostic of your
@@ -57,6 +57,14 @@ export default function CTA() {
           <div>
             <dt>Languages</dt>
             <dd>English · Português · Spanish</dd>
+          </div>
+          <div>
+            <dt>Business</dt>
+            <dd>
+              Campos Cunha Consulting
+              <br />
+              KVK 42156042
+            </dd>
           </div>
         </dl>
       </div>

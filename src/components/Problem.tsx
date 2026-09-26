@@ -27,9 +27,9 @@ export default function Problem() {
         <div className={styles.stats}>
           <blockquote className={styles.stat}>
             <p>
-              Yet per McKinsey&rsquo;s <em>State of AI</em> survey, fewer than{" "}
-              <em>1 in 10</em> organisations use AI regularly in supply-chain
-              or logistics — versus roughly <em>1 in 3</em> in marketing or IT.
+              Yet per McKinsey&rsquo;s <em>State of AI</em>{" "}survey, fewer than{" "}
+              <em>1 in 10</em>{" "}organisations use AI regularly in supply-chain
+              or logistics — versus roughly <em>1 in 3</em>{" "}in marketing or IT.
             </p>
             <cite className={styles.source}>
               Source · McKinsey, &ldquo;The State of AI&rdquo;
@@ -37,8 +37,8 @@ export default function Problem() {
           </blockquote>
           <blockquote className={styles.stat}>
             <p>
-              <em>70%</em> of AI value comes from <em>people, process &amp;
-              adoption</em> — only 10% from algorithms, 20% from data &amp;
+              <em>70%</em>{" "}of AI value comes from <em>people, process &amp;
+              adoption</em>{" "}— only 10% from algorithms, 20% from data &amp;
               tech.
             </p>
             <cite className={styles.source}>

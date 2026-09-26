@@ -5,7 +5,8 @@ export default function Footer() {
     <footer className={styles.footer}>
       <hr className="rule" />
       <div className={`container ${styles.row}`}>
-        <span>© MMXXVI · Francisco Cunha</span>
+        <span>© MMXXVI · Campos Cunha Consulting</span>
+        <span>KVK 42156042 · Utrecht, NL</span>
       </div>
     </footer>
   );

@@ -5,6 +5,8 @@
 .row {
   padding-top: 24px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
   justify-content: space-between;
   align-items: baseline;
   font-family: var(--font-sans), sans-serif;
@@ -15,5 +17,5 @@
 }
 
 .right {
-  color: var(--terracotta);
+  color: var(--accent);
 }

@@ -45,7 +45,7 @@ const stages: Stage[] = [
       <>
         The solution is designed, built, and integrated. Your team is trained
         on it as I go — not in a workshop afterwards. They own how it works
-        before launch day. Typical engagements ship in <em>4–8 weeks</em> from
+        before launch day. Typical engagements ship in <em>4–8 weeks</em>{" "}from
         kickoff.
       </>
     ),
@@ -93,8 +93,8 @@ export default function Framework() {
         <div className={styles.banner}>
           <span className={styles.bannerLabel}>Free · non-binding</span>
           <span className={styles.bannerBody}>
-            Stages <em>I</em> &amp; <em>II</em> — <em>Diagnostics</em> and{" "}
-            <em>Proposal</em> — are free and commit you to nothing. The work
+            Stages <em>I</em>{" "}&amp; <em>II</em>{" "}— <em>Diagnostics</em>{" "}and{" "}
+            <em>Proposal</em>{" "}— are free and commit you to nothing. The work
             begins at Stage <em>III</em>, on a written, fixed-scope agreement.
           </span>
         </div>

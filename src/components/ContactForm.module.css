@@ -49,7 +49,7 @@
 .input:focus,
 .textarea:focus {
   outline: none;
-  border-bottom-color: var(--terracotta);
+  border-bottom-color: var(--steel);
 }
 
 .textarea {
@@ -101,8 +101,8 @@
 .success {
   margin-top: 40px;
   padding: 28px;
-  border: 1px solid var(--terracotta);
-  background: rgba(181, 86, 46, 0.08);
+  border: 1px solid var(--steel);
+  background: rgba(99, 134, 169, 0.12);
   max-width: 640px;
 }
 

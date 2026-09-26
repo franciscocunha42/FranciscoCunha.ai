@@ -1,4 +1,12 @@
+import Image from "next/image";
 import styles from "./About.module.css";
+
+const background = [
+  { dt: "Previously", dd: "GXO Logistics · Farfetch (Coupang Group) · Kaizen Institute" },
+  { dt: "Education", dd: "MSc Industrial Engineering & Management, University of Porto" },
+  { dt: "Methods", dd: "Lean Six Sigma · Kaizen · Project Management (PMP® foundations)" },
+  { dt: "Recognition", dd: "Kaizen Award for Digitalization" },
+];
 
 export default function About() {
   return (
@@ -10,46 +18,72 @@ export default function About() {
           <em>independent.</em>
         </h2>
         <p className={styles.lede}>
-          A solo practice. The person who scopes the work is the person who
-          builds it — and the person who trains your team on it.
+          Campos Cunha Consulting is my independent practice. The person who
+          scopes the work is the person who builds it — and the person who
+          trains your team on it.
         </p>
-        <div className={styles.grid}>
+        <div className={styles.intro}>
+          <figure className={styles.portrait}>
+            <Image
+              src="/portrait.jpg"
+              alt="Francisco Cunha"
+              width={800}
+              height={800}
+              sizes="(min-width: 900px) 280px, 60vw"
+              className={styles.photo}
+            />
+            <figcaption className={styles.caption}>
+              Francisco Cunha · Founder
+            </figcaption>
+          </figure>
           <div className={styles.bio}>
             <p className="eyebrow">About me</p>
             <p>
-              Industrial engineer. <em>8+ years</em> scaling warehousing and
-              fulfilment operations across logistics, e-commerce, and B2B.
-              I work across the whole flow — from inception to system
-              maintenance — so the design choices and the engineering choices
-              stay aligned.
+              Industrial engineer with <em>8+ years</em>{" "}across contract
+              logistics, e-commerce fulfilment, and Lean consulting. I&rsquo;ve
+              owned delivery end to end — from the first process walk to
+              go-live and the improvements that follow.
+            </p>
+            <p>
+              I&rsquo;ve taken warehouses and systems live on time
+              (<em>WMS</em>{" "}/ <em>OMS</em>{" "}/ <em>ERP</em>, UAT, data migration,
+              SOPs, training) at sites with <em>1M+ stock units</em>{" "}and{" "}
+              <em>€500M+</em>{" "}in yearly revenue, and led cross-functional teams
+              across the US, the Netherlands, and Portugal.
             </p>
             <p>
               I take on a small number of engagements at a time. Each one gets
-              senior attention from start to finish. Shipped operational
-              systems (<em>WMS</em> / <em>ERP</em> / integrations) at multiple{" "}
-              <em>1M+ stock-unit</em> warehouses with <em>100+ users</em>.
+              senior attention from start to finish.
             </p>
+            <dl className={styles.background}>
+              {background.map((b) => (
+                <div key={b.dt}>
+                  <dt>{b.dt}</dt>
+                  <dd>{b.dd}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
-          <aside className={styles.col}>
-            <p className="eyebrow">Why me — not a traditional consultancy</p>
-            <ul className={styles.list}>
-              <li>
-                <em>Solo practice.</em> No account managers, no offshore
-                handover.
-              </li>
-              <li>
-                <em>Fixed scope</em> agreed in writing before kickoff.
-              </li>
-              <li>
-                <em>Working solutions</em> — not 80-page slide decks.
-              </li>
-              <li>
-                Tech, ops, and people skills in one person. The same person
-                who specs the system trains the users on it.
-              </li>
-            </ul>
-          </aside>
         </div>
+        <aside className={styles.col}>
+          <p className="eyebrow">Why me — not a traditional consultancy</p>
+          <ul className={styles.list}>
+            <li>
+              <em>Independent practice.</em>{" "}No account managers, no offshore
+              handover.
+            </li>
+            <li>
+              <em>Fixed scope</em>{" "}agreed in writing before kickoff.
+            </li>
+            <li>
+              <em>Working solutions</em>{" "}— not 80-page slide decks.
+            </li>
+            <li>
+              Tech, ops, and people skills in one person. The same person who
+              specs the system trains the users on it.
+            </li>
+          </ul>
+        </aside>
       </div>
     </section>
   );
